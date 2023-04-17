@@ -44,6 +44,11 @@ const IndexPage: Page = () => {
             <Link href='/'>Return to Index</Link>
 
             <h2 className='mb-5 text-3xl'>Menu</h2>
+            <div>
+                <Link href='/fooditem/create' className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block'>
+                    Checkout
+                </Link>
+            </div>
             {data?.map((x, i) => <FoodItemDisplayItem key={i} foodItem={x}></FoodItemDisplayItem>)}
         </div>
     );
